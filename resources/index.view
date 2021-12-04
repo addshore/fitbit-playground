@@ -1,0 +1,46 @@
+<svg>
+
+  <!--  page main  -->
+  <svg id="page-main" display="inline">
+    <svg class="horizontal-pad">
+      <use href="#dynamic-textarea" class="p2 foreground-fill" y="50">
+        <set href="#text" attributeName="text-buffer" to="Welcome to the addshore app" />
+      </use>
+      <rect width="100%" height="2" fill="fb-cyan" y="$+6" />
+    </svg>
+    <use id="main-button" href="#text-button" class="main-button text-button bottom application-fill">
+      <set href="#text" attributeName="text-buffer" to="Menu" />
+    </use>
+  </svg>
+
+  <!--  page blank  -->
+  <svg id="page-blank" display="none">
+  </svg>
+
+  <!--  page menu  -->
+  <svg id="page-menu" display="none">
+    <use id="menuList" href="#tile-list" class="horizontal-pad">
+      <var id="separator-height-bottom" value="6" />
+      <use id="menuListItemSensors" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Sensors" />
+      </use>
+    </use>
+  </svg>
+  
+  <!--  page sensors  -->
+  <svg id="page-sensors" display="none">
+    <rect width="100%" height="20" x="0" y="0" />
+    <text id="accel-label" class="sensor-label">accelerometer</text>
+    <text id="accel-data" class="sensor-data">{ ... }</text>
+    <text id="bar-label" class="sensor-label">barometer</text>
+    <text id="bar-data" class="sensor-data">{ ... }</text>
+    <text id="bps-label" class="sensor-label">body-presence</text>
+    <text id="bps-data" class="sensor-data">{ ... }</text>
+    <text id="gyro-label" class="sensor-label">gyroscope</text>
+    <text id="gyro-data" class="sensor-data">{ ... }</text>
+    <text id="hrm-label" class="sensor-label">heart rate</text>
+    <text id="hrm-data" class="sensor-data">{ ... }</text>
+    <text id="orientation-label" class="sensor-label">orientation</text>
+    <text id="orientation-data" class="sensor-data">{ ... }</text>
+  </svg>
+</svg>
