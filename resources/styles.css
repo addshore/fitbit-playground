@@ -43,6 +43,28 @@
   opacity: 0;
 }
 
+/* page user */
+.user-label {
+  font-family: System-Regular;
+  fill: white;
+  text-anchor: middle;
+  text-length: 32;
+  font-size: 20;
+  x: 50%;
+  y: $+5;
+}
+
+.user-data {
+  font-family: System-Light;
+  fill: yellow;
+  text-anchor: middle;
+  text-length: 64;
+  font-size: 20;
+  x: 50%;
+  y: $;
+}
+
+
 /* page sensors */
 .sensor-label {
   font-family: System-Regular;

@@ -24,7 +24,38 @@
       <use id="menuListItemSensors" href="#my-item">
         <set href="#text" attributeName="text-buffer" to="Sensors" />
       </use>
+      <use id="menuListItemVibrate" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Vibrate" />
+      </use>
+      <use id="menuListItemUser" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="User" />
+      </use>
     </use>
+  </svg>
+  
+  <!--  page user  -->
+  <svg id="page-user" display="none">
+    <section x="10%" y="15%" width="50" height="100">
+    <rect width="100%" height="20" x="0" y="0" />
+    <text id="age-label" class="user-label">age</text>
+    <text id="age-data" class="user-data">{ ... }</text>
+    <text id="bmr-label" class="user-label">bmr</text>
+    <text id="bmr-data" class="user-data">{ ... }</text>
+    <text id="gender-label" class="user-label">gender</text>
+    <text id="gender-data" class="user-data">{ ... }</text>
+    <text id="height-label" class="user-label">height</text>
+    <text id="height-data" class="user-data">{ ... }</text>
+    </section>
+    <section x="60%" y="20%" width="50" height="100">
+    <text id="maxHeartRate-label" class="user-label">maxHeartRate</text>
+    <text id="maxHeartRate-data" class="user-data">{ ... }</text>
+    <text id="restingHeartRate-label" class="user-label">restingHeartRate</text>
+    <text id="restingHeartRate-data" class="user-data">{ ... }</text>
+    <text id="stride-label" class="user-label">stride</text>
+    <text id="stride-data" class="user-data">{ ... }</text>
+    <text id="weight-label" class="user-label">weight</text>
+    <text id="weight-data" class="user-data">{ ... }</text>
+    </section>
   </svg>
   
   <!--  page sensors  -->
@@ -42,5 +73,36 @@
     <text id="hrm-data" class="sensor-data">{ ... }</text>
     <text id="orientation-label" class="sensor-label">orientation</text>
     <text id="orientation-data" class="sensor-data">{ ... }</text>
+  </svg>
+
+  <!--  page vibrate  -->
+  <svg id="page-vibrate" display="none">
+    <use id="vibrateList" href="#tile-list" class="horizontal-pad">
+      <var id="separator-height-bottom" value="6" />
+      <use id="vibrateListItemAlert" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Alert" />
+      </use>
+      <use id="vibrateListItemBump" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Bump" />
+      </use>
+      <use id="vibrateListItemConfirmation" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Confirmation" />
+      </use>
+      <use id="vibrateListItemConfirmationMax" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Confirmation Max" />
+      </use>
+      <use id="vibrateListItemNudge" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Nudge" />
+      </use>
+      <use id="vibrateListItemNudgeMax" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Nudge Max" />
+      </use>
+      <use id="vibrateListItemPing" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Ping" />
+      </use>
+      <use id="vibrateListItemRing" href="#my-item">
+        <set href="#text" attributeName="text-buffer" to="Ring" />
+      </use>
+    </use>
   </svg>
 </svg>
